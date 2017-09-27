@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/*
+    泛型方法对数组排序
+*/
 public class Test2 {
-    public static <E extends Comparable<E>> void sort(ArrayList<E> list){
+    private static <E extends Comparable<E>> void sort(ArrayList<E> list){
         for(int i = 0;i<list.size();i++){
             int index = i;
             E max = list.get(i);
@@ -18,7 +20,7 @@ public class Test2 {
         }
     }
     public static void main(String args[]){
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         Scanner input = new Scanner(System.in);
         for(int i = 0;i<10;i++){

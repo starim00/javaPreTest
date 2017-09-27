@@ -1,7 +1,9 @@
 import java.util.Scanner;
-
+/*
+    泛型方法找出数组最大值
+*/
 public class Test1 {
-    public static <E extends Comparable<E>> E max(E[] list) {
+    private static <E extends Comparable<E>> E max(E[] list) {
         E max;
         max = list[0];
         for(int i = 1;i<list.length;i++){
