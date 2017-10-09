@@ -14,12 +14,10 @@ public class Test1 {
     }
     public static void main(String args[]){
         Integer list[] = new Integer[10];
-
         Scanner input = new Scanner(System.in);
         for(int i = 0;i<10;i++){
             list[i] = input.nextInt();
         }
         System.out.println(max(list));
-
     }
 }

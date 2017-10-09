@@ -21,7 +21,6 @@ public class Test2 {
     }
     public static void main(String args[]){
         ArrayList<Integer> list = new ArrayList<>();
-
         Scanner input = new Scanner(System.in);
         for(int i = 0;i<10;i++){
             list.add(input.nextInt());
